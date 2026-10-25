@@ -1,0 +1,30 @@
+<%- include("./partials/header") %>
+
+<div class="w-full h-full max-w-md mx-auto bg-zinc-100 rounded-xl shadow p-5 mt-4">
+
+    <h2 class="text-3xl font-semibold pb-3">
+        Edit Profile
+    </h2>
+<form action="/update-profile" method="post">
+    <label for="fullname">Name:</label>
+    <input class="w-full border-gray-200 rounded-xl px-2 py-3 text-sm outline-none transition focus:border-black "
+    type="text"
+    name="fullname"
+    value="<%= user.fullName %>">
+
+    <label for="username">Username:</label>
+<input class="w-full border-gray-200 rounded-xl px-2 py-3 mt-2 text-sm outline-none transition focus:border-black "
+    type="text"
+    name="username"
+    value="<%= user.username %>">
+
+<label for="description">Description:</label>
+<textarea type="text" class="w-full border-gray-200 rounded-xl px-2 py-3 mt-2 text-sm outline-none transition focus:border-black" 
+    name="description">
+    <%= user.description %></textarea>
+
+    <button class="bg-blue-500 py-2 px-3 mt-2 rounded-xl items-center w-full text-xl  font-semibold">Save Changes</button>
+
+</form>
+</div>
+<%- include("./partials/footer") %>

@@ -1,0 +1,42 @@
+body{
+    background: #000;
+}
+
+.container {
+  column-count: 4;
+  column-gap: 1px;
+}
+
+@media screen and (max-width:1000px){
+.container {
+  column-count: 3;
+  column-gap: 2px;
+}
+    
+}
+@media screen and (max-width:800px){
+.container {
+  column-count: 2;
+  column-gap: 2px;
+}
+    
+}
+
+
+@media screen and (max-width:400px){
+.container {
+  column-count: 1;
+  column-gap: 2px;
+}
+    
+}
+
+img{
+    max-width: 100%;
+    display: block;
+border-radius: 5%;
+} 
+
+.wrapper{
+margin: 5px;
+}
