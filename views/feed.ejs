@@ -7,7 +7,9 @@
     <div class="h-56 w-full bg-sky-100 rounded-2xl overflow-hidden">
     <img class="w-full h-full object-cover" src="/images/uploads/<%= post.image %>" alt="image">
   </div>
-  <h5 class="text-sm opacity-75">Posted: @<%= post.user.username %></h5>
+  <!-- <h5 class="text-sm opacity-75">Posted: @<%= post.user.username %></h5> -->
+  <h5 class="text-sm opacity-75">Posted: @<%= post.user ? post.user.username : 'Unknown User' %>
+  </h5>
   <h4 class="mt-2 text-sm px-2">@<%= post.title %></h4>
   <h5><%= post.imageText %></h5>
   </div>

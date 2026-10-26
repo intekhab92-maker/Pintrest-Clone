@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema(
     },
 
     dp: {
-      type: String, // URL or file path of profile picture
+      type: String, 
       default: "",
     },
     
